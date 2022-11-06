@@ -1,0 +1,27 @@
+.home_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.home_container_description{
+
+}
+
+.home_container_description > h1{
+    margin: 2rem 0;
+}
+
+.home_container_description > h3{
+    margin: 1rem 0;
+}
+
+.home_container_about {
+    margin: 2rem 0;
+}
+
+.home_container_about:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
