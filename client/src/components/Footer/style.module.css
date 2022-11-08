@@ -1,3 +1,17 @@
 .footer_component {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 3rem;
+}
 
+.footer_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_row_link {
+    margin: 0 0 2rem;
+    text-decoration: none;
+    color: #000;
 }

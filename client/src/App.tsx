@@ -6,13 +6,14 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
 import About from "./components/About";
+import {Container} from "@mui/material";
 
 
 const App = () => {
     return (
-        <div className="App">
+        <Container maxWidth="sm">
             <BrowserRouter>
-            <Header/>
+                <Header/>
                 <Routes>
                     <Route path='/home' element={<Home/>}/>
                     <Route path='/dashboard' element={<Dashboard/>}/>
@@ -21,7 +22,7 @@ const App = () => {
                 </Routes>
             </BrowserRouter>
             <Footer/>
-        </div>
+        </Container>
     );
 }
 

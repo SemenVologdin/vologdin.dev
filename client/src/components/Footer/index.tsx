@@ -4,28 +4,24 @@ import styles from './style.module.css';
 const Footer = ()=>{
     const links = [
         [
-            {title: 'Title1', link: 'google.com'},
-            {title: 'Title1', link: 'google.com'},
-            {title: 'Title1', link: 'google.com'}
+            {title: '🏠 Home', link: 'google.com'},
+            {title: '👽 About', link: 'google.com'},
+            {title: '🔥 Dashboard', link: 'google.com'}
         ],[
-            {title: 'Title1', link: 'google.com'},
-            {title: 'Title1', link: 'google.com'},
-            {title: 'Title1', link: 'google.com'}
-        ],[
-            {title: 'Title1', link: 'google.com'},
-            {title: 'Title1', link: 'google.com'},
-            {title: 'Title1', link: 'google.com'}
-        ]
+            {title: '💻 GitHub', link: 'google.com'},
+            {title: '📫 Gmail', link: 'google.com'},
+            {title: '📞 Telegram', link: 'google.com'}
+        ],
     ]
 
     return(
         <>
             <div className={styles.footer_component}>
                 {links.map(links => (
-                    <div className={styles.footer_component}>
+                    <div className={styles.footer_row}>
                         {
                             links.map(link=>{
-                                return (<a href={link.link}>{link.title}</a>)
+                                return (<a href={link.link} className={styles.footer_row_link}>{link.title}</a>)
                             })
                         }
                     </div>

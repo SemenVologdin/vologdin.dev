@@ -3,8 +3,13 @@
     margin: 1rem 0;
     padding: 0.5rem;
     border-radius: 7px;
-    display: flex;
-    justify-content: space-between;
+}
+
+.project_card:hover {
+    transform: scale(1.02);
+    transition: all 0.15s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+    will-change: transform;
 }
 
 .project_card_open{
@@ -12,4 +17,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.project_card_title {
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
